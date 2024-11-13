@@ -31,7 +31,7 @@ function App() {
       .then((data) => {
         setBookmarks(data);
       });
-  }, []);
+  }, [BE_URL]);
 
   const handleLogout = () => {
     localStorage.removeItem("token");
